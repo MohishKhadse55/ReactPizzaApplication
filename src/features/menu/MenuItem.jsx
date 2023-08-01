@@ -45,7 +45,7 @@ function MenuItem({ pizza }) {
           )}
 
           {isInCart && <DeleteItem pizzaId={id} />}
-          {!soldOut && isInCart && (
+          {!soldOut && !isInCart && (
             <Button type="small" onClick={handleAddToCart}>
               Add to cart
             </Button>
